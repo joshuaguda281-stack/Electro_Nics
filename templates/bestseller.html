@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Bestseller Products - Electro{% endblock %}
+
+{% block content %}
+
+    <!-- Single Page Header start -->
+    <div class="container-fluid page-header py-5">
+        <h1 class="text-center text-white display-6 wow fadeInUp" data-wow-delay="0.1s">Bestseller Products</h1>
+        <ol class="breadcrumb justify-content-center mb-0 wow fadeInUp" data-wow-delay="0.3s">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+            <li class="breadcrumb-item active text-white">Bestseller</li>
+        </ol>
+    </div>
+    <!-- Single Page Header End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid px-0">
+        <div class="row g-0">
+            <div class="col-6 col-md-4 col-lg-2 border-start border-end wow fadeInUp" data-wow-delay="0.1s">
+                <div class="p-4">
+                    <div class="d-inline-flex align-items-center">
+                        <i class="fa fa-sync-alt fa-2x text-primary"></i>
+                        <div class="ms-4">
+                            <h6 class="text-uppercase mb-2">Free Return</h6>
+                            <p class="mb-0">30 days money back guarantee!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 border-end wow fadeInUp" data-wow-delay="0.2s">
+                <div class="p-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fab fa-telegram-plane fa-2x text-primary"></i>
+                        <div class="ms-4">
+                            <h6 class="text-uppercase mb-2">Free Shipping</h6>
+                            <p class="mb-0">Free shipping on all order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 border-end wow fadeInUp" data-wow-delay="0.3s">
+                <div class="p-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-life-ring fa-2x text-primary"></i>
+                        <div class="ms-4">
+                            <h6 class="text-uppercase mb-2">Support 24/7</h6>
+                            <p class="mb-0">We support online 24 hrs a day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 border-end wow fadeInUp" data-wow-delay="0.4s">
+                <div class="p-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-credit-card fa-2x text-primary"></i>
+                        <div class="ms-4">
+                            <h6 class="text-uppercase mb-2">Receive Gift Card</h6>
+                            <p class="mb-0">Recieve gift all over oder $50</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 border-end wow fadeInUp" data-wow-delay="0.5s">
+                <div class="p-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-lock fa-2x text-primary"></i>
+                        <div class="ms-4">
+                            <h6 class="text-uppercase mb-2">Secure Payment</h6>
+                            <p class="mb-0">We Value Your Security</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 border-end wow fadeInUp" data-wow-delay="0.6s">
+                <div class="p-4">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-blog fa-2x text-primary"></i>
+                        <div class="ms-4">
+                            <h6 class="text-uppercase mb-2">Online Service</h6>
+                            <p class="mb-0">Free return products in 30 days</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Products Offer Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.2s">
+                    <a href="#" class="d-flex align-items-center justify-content-between border bg-white rounded p-4">
+                        <div>
+                            <p class="text-muted mb-3">Find The Best Camera for You!</p>
+                            <h3 class="text-primary">Smart Camera</h3>
+                            <h1 class="display-3 text-secondary mb-0">40% <span class="text-primary fw-normal">Off</span></h1>
+                        </div>
+                        <img src="{% static 'img/product-1.png' %}" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <a href="#" class="d-flex align-items-center justify-content-between border bg-white rounded p-4">
+                        <div>
+                            <p class="text-muted mb-3">Find The Best Whatches for You!</p>
+                            <h3 class="text-primary">Smart Whatch</h3>
+                            <h1 class="display-3 text-secondary mb-0">20% <span class="text-primary fw-normal">Off</span></h1>
+                        </div>
+                        <img src="{% static 'img/product-2.png' %}" class="img-fluid" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Products Offer End -->
+
+    <!-- Bestseller Products Start -->
+    <div class="container-fluid products pt-5">
+        <div class="container products-mini py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 700px;">
+                <h4 class="text-primary mb-4 border-bottom border-primary border-2 d-inline-block p-2 title-border-radius wow fadeInUp" data-wow-delay="0.1s">Bestseller Products</h4>
+                <p class="mb-0 wow fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, asperiores ducimus sint quos tempore officia similique quia? Libero, pariatur consectetur?</p>
+            </div>
+            <div class="row g-4">
+                <!-- Product cards: keep exactly as in your original, but change every img src="img/..." to src="{% static 'img/...' %}" -->
+            </div>
+        </div>
+    </div>
+    <!-- Bestseller Products End -->
+
+    <!-- Our Products Start -->
+    <div class="container-fluid product pt-5">
+        <div class="container py-5">
+            <!-- Keep your tab-class section here unchanged (all 4 tabs) -->
+        </div>
+    </div>
+    <!-- Our Products End -->
+
+    <!-- Product List Start -->
+    <div class="container-fluid products productList overflow-hidden">
+        <div class="container products-mini py-5">
+            <!-- Keep your owl-carousel section here unchanged -->
+        </div>
+    </div>
+    <!-- Product List End -->
+
+    <!-- Product Banner Start -->
+    <div class="container-fluid py-5">
+        <div class="container pb-5">
+            <div class="row g-4">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <a href="#">
+                        <div class="bg-primary rounded position-relative">
+                            <img src="{% static 'img/product-banner.jpg' %}" class="img-fluid w-100 rounded" alt="">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center rounded p-4" style="background: rgba(255, 255, 255, 0.5);">
+                                <h3 class="display-5 text-primary">EOS Rebel <br> <span>T7i Kit</span></h3>
+                                <p class="fs-4 text-muted">$899.99</p>
+                                <a href="#" class="btn btn-primary rounded-pill align-self-start py-2 px-4">Shop Now</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.2s">
+                    <a href="#">
+                        <div class="text-center bg-primary rounded position-relative">
+                            <img src="{% static 'img/product-banner-2.jpg' %}" class="img-fluid w-100" alt="">
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center rounded p-4" style="background: rgba(242, 139, 0, 0.5);">
+                                <h2 class="display-2 text-secondary">SALE</h2>
+                                <h4 class="display-5 text-white mb-4">Get UP To 50% Off</h4>
+                                <a href="#" class="btn btn-secondary rounded-pill align-self-center py-2 px-4">Shop Now</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Banner End -->
+
+{% endblock %}
