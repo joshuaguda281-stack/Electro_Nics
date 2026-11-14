@@ -144,3 +144,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 STATICFILES_DIRS = [
     BASE_DIR / 'assets',
 ]
+import os
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [BASE_DIR / "assets"]   # your source folder
+STATIC_ROOT = BASE_DIR / "staticfiles"     # where collectstatic puts them
