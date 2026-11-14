@@ -1,6 +1,6 @@
 {
-  "version"; 2,
-  "builds"; [
+  "version": 2,
+  "builds": [
     {
       "src": "electro_nics/wsgi.py",
       "use": "@vercel/python",
@@ -9,7 +9,7 @@
       }
     }
   ],
-  "routes"; [
+  "routes": [
     { "src": "/static/(.*)", "dest": "/static/$1" },
     { "src": "/(.*)", "dest": "electro_nics/wsgi.py" }
   ]
